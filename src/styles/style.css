@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url("https://use.typekit.net/pul1ftd.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #222223;
+  --black-overlay: #22222350;
+  --white: #fff;
+  --white-overlay: #ffffff80;
+  --pink: #ebc6de;
+  --purple: #c1a7e2;
+  --mint: #b6e0d7;
+  --header: "Cherry Bomb One", cursive;
+  --serif: "mrs-eaves", "Baskerville", serif;
+  --sans-serif: "mr-eaves-sans", sans-serif;
+  --small-caps: "mrs-eaves-roman-petite-caps", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--pink);
+  font-family: var(--serif);
+  color: var(--black);
+  font-size: 18px;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+
+}
+
+h1, .faux-header {
+  font-family: var(--header);
+  font-size: 3.5rem;
+  line-height: 1em;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-family: var(--serif);
+  font-size: 2rem;
+}
+/***************
+***Global Nav***
+***************/
+nav {
+  height: 50px;
+  background-color: var(--black);
+  color: var(--pink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  background-color: var(--pink);
+}
+
+.nav-links {
+  width: 50%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background-color: var(--black);
+  display: none;
+  margin: 0;
+}
+
+.nav-links a{
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+  color: var(--pink);
+  text-decoration: none;
+  font-family: var(--small-caps);
+  font-size: 1.2rem;
+  transition: 0.25s;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+  background-color: var(--mint);
+  color: var(--black)
+}
+
+.expanded {
+  display: unset;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**desktop display**/
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/*****************
+*Modular Sections*
+*****************/
+.content-wrapper {
+  width: 80%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/**************
+***Dark Mode***
+**************/
+
+html.dark, .dark {
+  background-color: var(--black);
+  color: var(--pink);
+}
+
+.dark nav, .dark footer, .dark button, .dark .btn-link {
+  background-color: var(--pink);
+  color: var(--black);
+  border: 2px solid var(--pink);
+}
+.dark button:hover, .dark .btn-link:hover {
+  background-color: var(--black);
+  color: var(--pink);
+}
+.dark .nav-links, .dark .nav-links a, .dark footer a{
+  background-color: var(--pink);
+  color: var(--black);
+}
+.dark .nav-links a:hover {
+  background-color: var(--mint);
+}
+
+.dark .hamburger .line {
+  background-color: var(--black);
+}

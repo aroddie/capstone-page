@@ -1,0 +1,22 @@
+---
+const { display, pageTitle } = Astro.props;
+
+---
+
+	<div class="hero">
+		<h1 class={display}>{pageTitle}</h1>
+		<slot />
+	</div>
+
+	<style>
+		.hero {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 50vh;
+			max-height: fit-content;
+			padding: 20px;
+			margin-bottom: 50px;
+		}
+	</style>
