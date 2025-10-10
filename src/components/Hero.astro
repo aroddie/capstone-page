@@ -4,12 +4,16 @@ const { display, pageTitle } = Astro.props;
 ---
 
 	<div class="hero">
-		<h1 class={display}>{pageTitle}</h1>
+		<div class="content-wrapper">
+			<h1 class={display}>{pageTitle}</h1>
 		<slot />
+		</div>
+		
 	</div>
 
 	<style>
 		.hero {
+			background-image: url('/images/bg-light-pattern.jpg');
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
