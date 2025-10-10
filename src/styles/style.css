@@ -119,7 +119,8 @@ nav {
 @media screen and (min-width: 636px) {
   .nav-links {
     display: block;
-    position: static;
+    position: relative;
+    top: 0;
     width: auto;
     background: none;
   }
@@ -149,6 +150,39 @@ nav {
 }
 
 /****************
+**Tools Used****
+****************/
+	.tool-cards {
+		margin: 10px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+	.tool-card {
+		height: 200px;
+		background: var(--black);
+		color: var(--pink);
+		padding: 20px;
+		border-radius: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 626px) {
+		.tool-cards {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media screen and (min-width: 850px) {
+		.tool-cards {
+			grid-template-columns: repeat(3, 1fr);	
+		}
+
+	}
+
+/****************
 *Buttons & Links*
 ****************/
 .btn-link, button {
@@ -173,6 +207,21 @@ nav {
 a.btn-link{
   display: inline-block;
 }
+
+	button.spoiler {
+		background-color: var(--pink);
+		color: var(--black);
+		font-family: var(--small-caps);
+	}
+
+	button.spoiler:hover {
+		background-color: var(--black);
+		color: var(--mint);
+	}
+
+	button.spoiler::after {
+		content: ' >';
+	}
 
 /**************
 ***Dark Mode***
