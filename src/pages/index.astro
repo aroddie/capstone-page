@@ -10,28 +10,37 @@ const pageTitle = "Capstone Project: Sweet Little Hauntings"
 			How do you mourn someone who never really existed?
 		</p>
 	</Hero>
-	<div class="content-wrapper module">
-		<h2>About the Project</h2>
-		<p>
-			Project Description goes here Leo volutpat nascetur lorem consectetur aenean phasellus ante libero potenti lectus. Ante nec metus maximus facilisis scelerisque diam at urna mattis massa duis. Feugiat neque leo ligula ad praesent donec est luctus.
-		</p>
-		<p>
-			Luctus natoque imperdiet porttitor pretium etiam venenatis auctor. Nisi sollicitudin rhoncus suspendisse fames habitant. Euismod libero parturient praesent integer mattis eleifend. Etiam commodo phasellus proin lorem libero faucibus himenaeos. Accumsan aliquam tempus porttitor iaculis metus cras est lacinia praesent mollis. Per rutrum dictumst facilisi nulla ultricies rhoncus phasellus justo vel praesent. Eu iaculis ultricies augue proin non. Vehicula aenean interdum pretium ullamcorper est lobortis elementum montes consequat suscipit.
-		</p>
-		<p>
-			Augue ullamcorper porta venenatis dolor nascetur sagittis donec ex. Penatibus facilisi morbi lacinia quis tempus risus ornare dignissim augue nam. Neque molestie consectetur sapien pharetra ultricies eros interdum. Rutrum per ad hendrerit magnis vestibulum semper pulvinar eros morbi finibus faucibus.
-		</p>
-		<h3>What is Unfiction?</h3>
-		<p>
-			Unfiction definition goes here Pharetra rutrum volutpat magnis nascetur gravida tempor. Odio himenaeos felis turpis ad convallis mollis diam ex iaculis taciti nam. Litora nisi amet ad aptent per condimentum luctus felis.
-		</p>
-		<h3>What is an ARG?</h3>
-		<p>
-			ARG Definition goes here Vel phasellus hendrerit nullam molestie potenti bibendum nunc efficitur feugiat himenaeos. Leo ullamcorper pretium nunc lorem dapibus urna nascetur vitae sit inceptos per. Risus urna class lectus nostra aliquet conubia enim porta purus nisl.
-		</p>
-	</div>
+	<div class="content-wrapper module" id="about">
+		<div class="about-main">
+			<h2>About the Project</h2>
+			<p>
+				On the surface, Sweet Little Hauntings is an online art shop that sells a variety of trinkets and stationary items, such as enamel pins, acrylic charms, and stickers with a pastel goth aesthetic. However, with a bit of digging the website becomes a stage for a secret narrative of loss and grief that site users can unlock by solving hidden puzzles. Both the shop and the narrative take inspiration from finding comfort in discomfort, the darker aspects of life, and what lies beyond.
+			</p>
+			<p>
+				This unfiction project explores experimental methods of storytelling by inviting the site visitors to dive down a rabbit hole of mystery and horror. It takes inspiration from previous works like House of Leaves by Mark Z. Danielewski, Omega Mart from Meow Wolf, and videos like Unedited Footage of a Bear, all of which start out relatively normal but quickly spiral into something strange, fantastic, and horrifying. Sweet Little Hauntings aims to make its audience think and feel in ways they may not experience in their everyday lives.
+			</p>
+		</div>
 
-	<div class="content-wrapper module">
+		<div class="asides">
+			<div class="aside-box">
+				<h3>What is Unfiction?</h3>
+				<p>
+					Unfiction is a method of storytelling where a narrative is presented as if it were real, allowing the audience to fully suspend their disbelief and immerse themselves in the story. They typically start out grounded in our reality, and then integrate more fantastical, supernatural, or horrific elements while still maintaining the insistence on reality.
+				</p>
+			</div>
+
+			<div class="aside-box">
+				<h3>What is an ARG?</h3>
+				<p>
+					An ARG, or Alternate Reality Game, is a type of unfiction that requires audience participation, typically in the form of solving puzzles that are hidden within the presentation of the story. Tradionally, an ARG will have a community working together to solve the clues the creator has planted, and the creator will release new parts of the story when the last part has been solved.
+				</p>
+			</div>			
+		</div>
+
+		</div>
+		
+
+	<div class="content-wrapper module" id="problem-statement">
 		<h2>What problem does this solve?</h2>
 		<p>
 			I want to connect with others and form community around difficult or sensitive topics through creative means of storytelling.
@@ -47,7 +56,7 @@ const pageTitle = "Capstone Project: Sweet Little Hauntings"
 			Puzzles and mystery solving not only help people engage their brains and practice critical thinking skills, but most people also love feeling like they have access to hidden knowledge or achievements that they had to work to get.
 		</p>
 	</div>
-	<div class="content-wrapper module">
+	<div class="content-wrapper module" id="research">
 		<h2>Research</h2>
 		<p>Text about the research process Nam vitae at nascetur sit commodo purus. Maecenas dolor augue laoreet dignissim id congue habitasse. Congue litora viverra taciti class aptent ornare et.</p>
 		<h3>Research Process</h3>
@@ -69,43 +78,62 @@ const pageTitle = "Capstone Project: Sweet Little Hauntings"
 			Sem sodales volutpat laoreet in vehicula malesuada nunc vulputate turpis nullam erat. Consectetur dapibus blandit aliquet venenatis ullamcorper elit odio a. Est lorem id lectus eget tellus nec venenatis maximus ultrices mus. Fermentum tempus interdum inceptos lorem faucibus diam justo lacus accumsan. Habitasse elit dis hac aenean mauris diam pretium. Aliquet morbi mattis etiam tortor fusce augue lacinia netus. Finibus pellentesque vehicula dignissim lorem conubia fermentum egestas ac. Ac sagittis ornare litora ut ante euismod pede etiam posuere turpis fringilla.
 		</p>
 	</div>
-	<div class="content-wrapper module">
+	<div class="content-wrapper module" id="process">
 		<h2>Process</h2>
 		<p>This is how I made it Proin nulla efficitur dui faucibus urna. Interdum id dignissim arcu ante dictumst etiam facilisis felis elementum quis finibus. Nulla vulputate quam nunc viverra rhoncus natoque libero. Consectetur diam orci molestie felis convallis duis egestas vivamus.</p>
 		<p>Et ante elit potenti ornare leo nam sed faucibus libero lacinia. Magna ligula fames tempus faucibus diam morbi nibh neque. Convallis diam id nascetur letius turpis. Nullam lorem posuere habitant nec vehicula mollis eros risus.</p>
-		<h3>Tools</h3>
-		These are the things I used to make this:
+		<h3 id="tools">Tools and Technology</h3>
+		A quick rundown of everything I used for this project.
 		<div class="tool-cards">
 			<div class="tool-card">
-				<h4>Tool Name</h4>
-				<p>Quick blurb of how I used it Facilisi erat pellentesque velit et lacinia molestie rhoncus proin in</p>
+				<h4>Organization and Planning</h4>
+				<ul>
+					<li><strong>Notion</strong> for general planning, note-taking, and story outlines</li>
+					<li><strong>Physical sketchbook</strong> for product, brand, and website ideation</li>
+					<li><strong>Procreate</strong> for product ideation and sketching</li>
+					<li><strong>Figma/Figjam</strong> for UX design</li>
+				</ul>
 			</div>
 			<div class="tool-card">
-				<h4>Tool Name</h4>
-				<p>Quick blurb of how I used it Facilisi erat pellentesque velit et lacinia molestie rhoncus proin in</p>
+				<h4>Branding</h4>
+				<ul>
+					<li><strong>Adobe Illustrator</strong> for logo designs, icons, and Frankie graphics</li>
+					<li><strong></strong></li>
+				</ul>
 			</div>
 			<div class="tool-card">
-				<h4>Tool Name</h4>
-				<p>Quick blurb of how I used it Facilisi erat pellentesque velit et lacinia molestie rhoncus proin in</p>
+				<h4>Graphics</h4>
+				<ul>
+					<li><strong>Clip Studio Paint</strong> for illustrations</li>
+					<li><strong>Adobe Photoshop</strong>for mock-ups</li>
+				</ul>
 			</div>
 			<div class="tool-card">
-				<h4>Tool Name</h4>
-				<p>Quick blurb of how I used it Facilisi erat pellentesque velit et lacinia molestie rhoncus proin in</p>
+				<h4>Coding</h4>
+				<ul>
+					<li><strong>HTML, CSS, and Javascript</strong> as coding languages used</li>
+					<li><strong>Astro</strong> as a framework to organize and optimize the website</li>
+					<li><strong>VS Code</strong> to have somewhere to write and test the code</li>
+				</ul>
 			</div>
 			<div class="tool-card">
-				<h4>Tool Name</h4>
-				<p>Quick blurb of how I used it Facilisi erat pellentesque velit et lacinia molestie rhoncus proin in</p>
+				<h4>Website</h4>
+				<ul>
+					<li><strong>Cloudflare</strong> for domain registration and web hosting</li>
+				</ul>
 			</div>
 			<div class="tool-card">
-				<h4>Tool Name</h4>
-				<p>Quick blurb of how I used it Facilisi erat pellentesque velit et lacinia molestie rhoncus proin in</p>
+				<h4>Category</h4>
+				<ul>
+					<li><strong>Tool or Tech used</strong> and what exactly I used it for</li>
+				</ul>
 			</div>
 		</div>
 		<p>
 			Some kind of wrap-up statement about process and tools.
 		</p>
 	</div>
-	<div class="content-wrapper module">
+	<div class="content-wrapper module" id="deliverables">
 		<h2>Deliverables</h2>
 		<p>This is what I turned in Parturient id aliquam mattis eleifend fermentum. Convallis nam ultricies felis etiam adipiscing curabitur libero mi diam accumsan.</p>
 		<h3>The Front Rooms</h3>
@@ -127,7 +155,7 @@ const pageTitle = "Capstone Project: Sweet Little Hauntings"
 		<p>Explaining the Narrative -- probably will do some sort of button to hide/reveal this and warn for spoilers.</p>
 		<button class="spoiler">Spoiler Button</button>
 	</div>
-	<div class="content-wrapper module">
+	<div class="content-wrapper module" id="summary">
 		<h2>Summary</h2>
 		<p>
 			Summary of the project Adipiscing ad turpis suscipit class cursus viverra natoque. Nibh sapien habitasse molestie ex suspendisse. Venenatis ante adipiscing suspendisse aptent at odio semper nam fames rutrum viverra. Integer purus mus senectus elit porttitor venenatis consectetuer dolor sollicitudin mollis.
