@@ -92,15 +92,20 @@ nav {
 
 .nav-links {
   background-color: var(--black);
-  width: 50%;
+  width: 30%;
   position: fixed;
   top: 50px;
   left: 0;
   display: none;
   margin: 0;
 }
+
+ul {
+  list-style: none;
+}
 .nav-links li {
   padding: 10px 0;
+  margin: 0;
   transition: 0.25s;
 }
 .nav-links a{
@@ -122,13 +127,6 @@ nav {
 
 .expanded {
   display: unset;
-}
-
-.icons {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /**desktop display**/
