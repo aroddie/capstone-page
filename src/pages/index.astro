@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
 import Hero from "../components/Hero.astro"
+import SpoilerButton from "../components/SpoilerButton.astro"
 const pageTitle = "Capstone Project: Sweet Little Hauntings"
 ---
 <BaseLayout pageTitle={ pageTitle }>
@@ -59,14 +60,11 @@ const pageTitle = "Capstone Project: Sweet Little Hauntings"
 	</div>
 	<div class="content-wrapper module" id="research">
 		<h2>Research</h2>
-		<p>Text about the research process Nam vitae at nascetur sit commodo purus. Maecenas dolor augue laoreet dignissim id congue habitasse. Congue litora viverra taciti class aptent ornare et.</p>
-		<h3>Research Process</h3>
+		<p>My research began in the Summer of 2024 in Design Studio, when I was initially designing the Sweet Little Hauntings brand. I started by looking into the aesthetics and history of pastel goth and pastel horror, as well as the logistics of product manufacturing for the shop.</p>
 		<p>
-			My research began in the Summer of 2024 in Design Studio, when I was initially designing the Sweet Little Hauntings brand. I started by looking into the aesthetics and history of pastel goth and pastel horror, as well as the logistics of product manufacturing for the shop.
+			Since then, I have expanded my research to include more ARG projects, as well as practical research into JavaScript frameworks and code snippets to achieve what I need in the website. I've collected all of my inspiration and sources from the entire process into my Research Archive document.
 		</p>
-		<p>
-			Since then, I have expanded my research to include more ARG projects, as well as practical research into JavaScript frameworks and code snippets to achieve what I need in the website.
-		</p>
+		<p><a href="https://docs.google.com/document/d/1iyRk76pBc7zwXu0BeqfB3FEI5CUzFm-2aZ0B_N0XQIg/edit?tab=t.0#heading=h.mk5fx75abz1g" class="btn-link" target="_blank">Research Archive</a></p>
 		<h3>Data Collection</h3>
 		<p>
 			I reached out to potential audience members with an open, anonymous survey to learn about what others look for in horror media and ARG projects. This gave me some good insight on my audience and helped to inform the way I constructed the project.
@@ -151,10 +149,19 @@ const pageTitle = "Capstone Project: Sweet Little Hauntings"
 		<p>
 			Maybe include a spoiler button to go more in-depth on the puzzles?
 		</p>
-		<button class="spoiler">Spoiler Button</button>
+		<SpoilerButton>
+			<div class="img-container">
+				<img src="/images/user-flow_denial.jpg" alt="the intended user flow for the Denial act of Sweet Little Hauntings">
+			</div>
+			<div class="img-container">
+				<img src="/images/user-flow_anger.jpg" alt="the intended user flow for the Anger act of Sweet Little Hauntings">
+			</div>
+		</SpoilerButton>
 		<h3>The Story</h3>
-		<p>Explaining the Narrative -- probably will do some sort of button to hide/reveal this and warn for spoilers.</p>
-		<button class="spoiler">Spoiler Button</button>
+		<p>As of now, the first two acts of a five act story are live on the site and ready to be discovered.</p>
+		<SpoilerButton>
+			<p>Add better explanation of story content here.</p>
+		</SpoilerButton>
 	</div>
 	<div class="content-wrapper module" id="summary">
 		<h2>Summary</h2>

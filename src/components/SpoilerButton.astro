@@ -1,0 +1,45 @@
+---
+
+---
+
+<button class="spoiler-toggle">Spoilers Ahead</button>
+<div class="spoiler">
+    <slot />
+</div>
+
+<style>
+    .spoiler-toggle {
+		background-color: var(--pink);
+		color: var(--black);
+		font-family: var(--small-caps);
+    }
+
+	.spoiler-toggle:hover, .active {
+		background-color: var(--black);
+		color: var(--mint);
+	}
+
+    .spoiler {
+        padding: 0 10px;
+        display: none;
+        overflow: hidden;
+    }
+</style>
+
+<script>
+    let spoiler = document.getElementsByClassName("spoiler-toggle");
+    let i;
+
+    for ( i = 0; i < spoiler.length; i++) {
+        spoiler[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            let spoilerContent = this.nextElementSibling;
+            if (spoilerContent.style.display === "block") {
+                spoilerContent.style.display = "none";
+            } else {
+                spoilerContent.style.display = "block";
+            }
+        })
+    }
+</script>

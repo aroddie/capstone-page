@@ -178,6 +178,14 @@ ul {
   font-size: 1rem;
 }
 
+.img-container {
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  object-fit: contain;
+}
 
 /****************
 **Tools Used****
@@ -241,19 +249,4 @@ ul {
 a.btn-link{
   display: inline-block;
 }
-
-	button.spoiler {
-		background-color: var(--pink);
-		color: var(--black);
-		font-family: var(--small-caps);
-	}
-
-	button.spoiler:hover {
-		background-color: var(--black);
-		color: var(--mint);
-	}
-
-	button.spoiler::after {
-		content: ' +';
-	}
 
