@@ -21,8 +21,9 @@
 
     .spoiler {
         padding: 0 10px;
-        display: none;
+        max-height: 0;
         overflow: hidden;
+        transition: max-height 0.2s ease-out;
     }
 </style>
 
@@ -34,11 +35,14 @@
         spoiler[i].addEventListener("click", function() {
             this.classList.toggle("active");
 
+
             let spoilerContent = this.nextElementSibling;
-            if (spoilerContent.style.display === "block") {
-                spoilerContent.style.display = "none";
+            if (spoilerContent.style.maxHeight) {
+                spoilerContent.style.maxHeight = null;
+                this.innerHTML = "Spoilers Ahead"
             } else {
-                spoilerContent.style.display = "block";
+                spoilerContent.style.maxHeight = spoilerContent.scrollHeight + "px";
+                this.innerHTML = "Close Spoilers"
             }
         })
     }
