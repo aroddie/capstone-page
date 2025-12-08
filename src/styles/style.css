@@ -157,34 +157,78 @@ ul {
 .content-wrapper {
   width: 80%;
   max-width: 1400px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .module {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+.asides {
+  background-color: var(--black);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.asides h3 {
+  color: var(--pink);
+  margin-left: 5px;
+}
 .aside-box {
-  background-color: var(--purple);
   border-radius: 5px;
   padding: 20px;
   margin: 5px;
+  color: var(--purple);
   font-family: var(--sans-serif);
   font-size: 0.9rem;
 }
 
-.aside-box h3 {
+.aside-box h4 {
   font-size: 1rem;
 }
 
 .img-container {
-  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
 }
 
 .img-container img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.ctr {
+  text-align: center;
+}
+
+.block-txt {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/** desktop display **/
+@media screen and (min-width: 850px) {
+  .module {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /*use img-left when image is after text in column flow but you want it before in row flow,
+  use img-right when image is before text in column flow but you want it after in row flow*/
+  .img-left, .img-right {
+    flex-direction: row-reverse;
+  }
+
+  .rt {
+    text-align: right;
+  }
 }
 
 /****************
